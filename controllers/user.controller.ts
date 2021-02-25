@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 
 export const getUsers = (req: Request, res: Response) => {
+  const { q, nombre, apikey } = req.query;
   res.json({
     msg: 'getApi',
   });
